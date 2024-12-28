@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <!-- Link para a Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #333;
+            color: #D3D3D3;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .sim-button {
+            background-color: #222;
+            color: #D3D3D3;
+        }
+
+        .nao-button {
+            background-color: #FAD0C3;
+            color: #D3D3D3;
+            position: relative;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #D3D3D3;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #D3D3D3;
+            text-decoration: none;
+            padding: 5px 10px;
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        .footer a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gatinha, você está sendo convidada para sair com seu namorado no dia 11/01! 🥰</h1>
+    <p>Você estará disponível?</p>
+    <div class="button-container">
+        <!-- Tag <a> envolve o botão "Sim" -->
+        <a href="file:///C:/Users/giova/site%20de%20convite/Parabéns!!.html">
+            <button class="button sim-button">Sim</button>
+        </a>
+        <button class="button nao-button" id="naoButton">Não</button>
+    </div>
+
+    <!-- Adicionando o texto no canto inferior esquerdo sem o ícone de carta -->
+    <div class="footer">
+        <p>de: giova | para: garota de ipanema</p>
+        <a href="https://www.youtube.com/watch?v=WuenyQ4NCQE&pp=ygURZ2Fyb3RhIGRlIGlwYW5lbWE%3D" target="_blank">Ir para o vídeo</a>
+    </div>
+
+    <script>
+        const naoButton = document.getElementById('naoButton');
+
+        naoButton.addEventListener('mouseover', function() {
+            const randomTop = Math.random() * 70;
+            const randomLeft = Math.random() * 70;
+            naoButton.style.position = 'absolute';
+            naoButton.style.top = randomTop + 'vh';
+            naoButton.style.left = randomLeft + 'vw';
+        });
+    </script>
+</body>
+</html>
